@@ -42,22 +42,6 @@ The **Pharmacy Management System (PMS)** is a web-based solution designed to str
 - **Database**: MySQL
 - **Web Server**: Apache or any other server that supports PHP
 
-## Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/pharmacy-management-system.git
-    ```
-2. Set up the database:
-    - Create a MySQL database.
-    - Import the SQL scripts located in the `db` folder.
-
-3. Configure the environment:
-    - Edit the `config.php` file with your database credentials.
-
-4. Run the application:
-    - Launch the web server using Apache or any suitable server.
-
 ## Challenges
 
 - **Data Security**: Ensuring secure storage and transmission of sensitive patient information.
