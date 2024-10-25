@@ -1,0 +1,16 @@
+**Mapping Between ER Diagram and Relational Schema:**
+
+In the "Patient" entity, the primary key is "Pid". The "Patient" entity has one multivalued attribute, "ContactNo", which requires the creation of a new table, "Patient_ContactNumber". In the "Patient_ContactNumber** table, a composite primary key is formed using "Pid" and "ContactNo".
+
+The "Patient" and "Doctor" entities have a many-to-one relationship, so the primary key from the "Doctor" table ("Phys_id") appears as a foreign key in the "Patient" table.
+
+"Drug" and "Pharmacy" have a many-to-many relationship, which requires the creation of a new table, "Drug_Sell". In the "Drug_Sell" table, the primary keys of both the "Pharmacy" and "Drug" tables serve as foreign keys.
+
+The "Drug" and "Drug_Manufacture" entities have a many-to-one relationship, so the primary key of the "Drug_Manufacture" table ("Company_id") is used as a foreign key in the "Drug' table.
+
+"Drug_Manufacture" and "Pharmacy" have a many-to-one relationship, so the primary key of the "Pharmacy" table ("Phar_id") appears as a foreign key in the "Drug_Manufacture" table.
+
+The "Pharmacy" entity has one multivalued attribute, 'Email", leading to the creation of a new table, "Pharmacy_Email". In this table, a composite primary key is formed using "Phar_id" and "Email".
+
+The "Employee" and "Pharmacy" entities have a many-to-one relationship, so the primary key of the "Pharmacy" table ("Phar_id") is included as a foreign key in the "Employee" table.
+
